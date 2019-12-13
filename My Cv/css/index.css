@@ -90,3 +90,13 @@ a.navbar-brand:hover{
     from {top:190px;}
     to {top:160px;}
   }
+@media screen and (max-width: 767px) {
+    .span-header{display:none}
+    .post-subtitle{text-align:center}
+    .post-preview{text-align:center}
+}
+@media (min-width:320px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    h1,h2{text-align:center}
+    a{text-align: center}
+}

@@ -179,17 +179,6 @@ function createSkills(){
     let ul9=document.createElement("ul");
     ul9.setAttribute("class","li-cv")
     div3.appendChild(ul9);
-    //let list9=document.createElement("li");
-    //let listText9=document.createTextNode("abilitati de programare");
-    //list9.appendChild(listText9);
-    //list8.appendChild(list9);
-    //let ul10=document.createElement("ul");
-    //ul10.setAttribute("class","li-cv")
-    //div3.appendChild(ul10);
-    //let list10=document.createElement("li");
-    //let listText10=document.createTextNode("adaptabilitate");
-    //list10.appendChild(listText10);
-    //list9.appendChild(list10);
     document.getElementById("btn-3").removeEventListener("click",createSkills);
 }
 

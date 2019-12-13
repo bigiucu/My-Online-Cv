@@ -50,30 +50,33 @@ function showQuestion(){
   }
 }
    
-  window.addEventListener("load", showQuestion, false)
+  window.addEventListener("load", showQuestion)
   
-  function querySelect(x){
+function querySelect(x){
     return document.querySelector(x);
   }
 
   function tenisPlayer(){
     let tennis=querySelect(".tenis-player");
-    tennis.innerHTML=`<img src="https://media.giphy.com/media/3oKIPkAsJiYo8TgUSs/source.gif" class="design-img">`
+    tennis.innerHTML=`<img src="https://media.giphy.com/media/3oKIPkAsJiYo8TgUSs/source.gif" class="design-img">`;
   }
 
   function removeTenis(){
     querySelect(".tenis-player").innerHTML=`#Jucatorul de tenis preferat: Simona Halep`;
-}
+  }
+  
   querySelect(".tenis-player").addEventListener("click",tenisPlayer);
   querySelect(".tenis-player").addEventListener("mouseleave",removeTenis);
   
   function handbalPlayer(){
     let handbal=querySelect(".handbal-player");
-    handbal.innerHTML=`<img src="https://media.giphy.com/media/bnjPGPTiDIGWY/source.gif" class="design-img">`
+    handbal.innerHTML=`<img src="https://media.giphy.com/media/bnjPGPTiDIGWY/source.gif" class="design-img">`;
   }
+  
   function removeHandbal(){
     querySelect(".handbal-player").innerHTML=`#Jucatorul de handbal preferat: Cristina Neagu`;
-}
+  }
+  
   querySelect(".handbal-player").addEventListener("click",handbalPlayer);
   querySelect(".handbal-player").addEventListener("mouseleave",removeHandbal);
   
@@ -82,9 +85,11 @@ function showQuestion(){
     let gym=querySelect(".gym-player");
     gym.innerHTML=`<img src="https://media.giphy.com/media/4OWeZ8sLg9V9m/source.gif" class="design-img">`
   }
+  
   function removeGym(){
     querySelect(".gym-player").innerHTML=`#Gimnasta favorita: Catalina Ponor`;
-}
+  }
+
   querySelect(".gym-player").addEventListener("click",gymPlayer);
   querySelect(".gym-player").addEventListener("mouseleave",removeGym);
 

@@ -12,10 +12,17 @@
 .fa.fa-exclamation-triangle{
   color: #E80518;
 }
+.color{
+  color:#51c980;
+}
 .obj_form{
     color:green;
     display:block;
     font-weight: bold;
+}
+.show_message{
+  box-sizing: border-box;
+  border: 1px solid #E80518;
 }
 .data_form{
     font-variant: normal;
@@ -24,7 +31,11 @@
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes env {
-    0%   {colortop:20px;}
+   0%   {colortop:20px;}
+   25%  {left:-20px; top:0px; }
+   50%  {left:-20px; top:-20px; }
+   75%  {left:0px; top:-20px;} 
+   100% {color:#51c980;; left:0px; top:0px; }
   }
   
   /* Standard syntax */
@@ -40,5 +51,4 @@
    /* border:1px solid #0085A1;*/
    transition-timing-function: linear;
    transition-timing-function: cubic-bezier(0, 0, 1, 1);
-   display:none;
 }

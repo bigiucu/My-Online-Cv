@@ -1,0 +1,92 @@
+
+img[src*="nav-bg"]{
+    border-radius: 50%;
+}
+img[src*="home-bg"]{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.foto_display{
+    float: left;
+    right:10px;
+    margin-right:5px; 
+}
+a.navbar-brand:hover{
+    cursor: pointer;
+
+}
+.first-lesson{
+    font-size: 18px;
+    font-style: italic;
+    display: inline-block;
+    margin-left: 100px;
+}
+.post-meta{
+    display: inline-block;
+    margin-left: 160px;
+}
+.first-lesson:hover{
+    cursor: pointer;
+    color:#0088B8;
+    text-decoration: underline;
+}
+.fa-angle-down::before{
+    font-size: 30px;
+    position: relative;
+    top:200px;
+    right:105px;
+    color: #fff;
+}
+.fa-angle-down:hover::before{
+    font-size: 35px;
+    color:#0085a1;
+    animation-name: down;
+    animation-duration: 4s;
+}
+.span-header{
+    position:relative;
+    top:150px;
+}
+.span-header:hover{
+    color:#0085a1;
+}
+.post-title.hobbies:hover{
+    color: #0085A1;
+    -webkit-transition: color 1000ms linear;
+    -ms-transition: color 1000ms linear;
+    transition: color 1000ms linear;
+}
+.scoala_informala{
+  top:0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  outline: 0;
+}
+.subtitle_span{
+    font-size: 20px;
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 10px;
+}
+.align-items{
+    align-items: center;
+}
+.post-subtitle{
+    text-align:left;
+}
+.h3, h3 {
+    font-size: 1.2rem;
+    padding-top:20px;
+    display: inline-block;
+}
+@keyframes down {
+    from {top:190px;}
+    to {top:160px;}
+  }

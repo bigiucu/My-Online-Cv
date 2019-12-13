@@ -1,0 +1,44 @@
+.color-env{
+    color:green;
+    position:relative;
+}
+.color-env:hover{
+  -webkit-animation-name: env; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: env;
+  animation-duration: 4s;
+  animation-direction: reverse;
+}
+.fa.fa-exclamation-triangle{
+  color: #E80518;
+}
+.obj_form{
+    color:green;
+    display:block;
+    font-weight: bold;
+}
+.data_form{
+    font-variant: normal;
+    color:#0085A1;
+    font-weight: bold;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes env {
+    0%   {colortop:20px;}
+  }
+  
+  /* Standard syntax */
+  @keyframes env {
+    0%  {left:0px; top:0px;}
+   25%  {left:-20px; top:0px; }
+   50%  {left:-20px; top:-20px; }
+   75%  {left:0px; top:-20px;} 
+   100% {color:#51c980;; left:0px; top:0px; }
+  }
+#div{
+    box-sizing: border-box;
+   /* border:1px solid #0085A1;*/
+   transition-timing-function: linear;
+   transition-timing-function: cubic-bezier(0, 0, 1, 1);
+   display:none;
+}

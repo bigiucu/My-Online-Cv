@@ -141,10 +141,6 @@ function createSkills(){
     let ul5=document.createElement("ul");
     ul5.setAttribute("class","li-cv skills")
     div3.appendChild(ul5);
-    //let list5=document.createElement("li");
-    //let listText5=document.createTextNode("adaptabilitate");
-    //list5.appendChild(listText5);
-    //list4.appendChild(list5);
     let img2=document.createElement("img");
     img2.setAttribute("src" , "img/hard-skills-logo.png");
     img2.setAttribute("width" ,"80px");

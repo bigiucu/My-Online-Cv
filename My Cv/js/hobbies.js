@@ -1,7 +1,8 @@
 let questions = [
                 ["Care este capitala Turciei?","Istanbul","Ankara","Antalya","B"],
                 ["De ce tara apartine insula Sardinia?","Franta","Grecia","Italia","C"],
-                ["Unde se afla Sagrada Familia?","Madrid","Barcelona","Valencia","B"]
+                ["Unde se afla Sagrada Familia?","Madrid","Barcelona","Valencia","B"],
+                ["In ce oras se afla Palatul Schonbrunn?","Viena","Berlin","Budapesta","A"]
                 ];
 
 let questionNr = 0;
@@ -15,7 +16,10 @@ function get(x){
 function showQuestion(){
     test = get("test");
     if(questionNr >= questions.length){
-      test.innerHTML = `<div>You got ${correct} of ${questions.length} questions correct</div><div>The correct answers are:</div><div>1. ${questions[0][0,2]} 2. ${questions[1][1,3]} 3. ${questions[2][2,2]}`;
+      test.innerHTML = 
+      `<div>You got ${correct} of ${questions.length} questions correct</div>
+        <div>The correct answers are:</div>
+          <div>1. ${questions[0][0,2]} 2. ${questions[1][1,3]} 3. ${questions[2][2,2]} 4. ${questions[3][3,1]}</div>`;
       get("test_status").innerHTML = `<i class="fas fa-check color"></i> Test completed`;
       questionNr = 0;
       correct = 0;

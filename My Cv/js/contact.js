@@ -23,7 +23,7 @@ function checkForm(event){
         document.sentMessage.phone1.focus() ;
         return false;
     }
-     if( document.sentMessage.message1.value < "10" ) {
+     if( document.sentMessage.message1.value.length < "10" ) {
         showText("Please leave a message!");
         return false;
      }
